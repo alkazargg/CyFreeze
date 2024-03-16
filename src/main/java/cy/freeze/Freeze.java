@@ -36,6 +36,7 @@ public class Freeze extends JavaPlugin implements Listener
             if (sender.hasPermission("freeze.use")) {
                 if (args.length == 0) {
                         player.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Eyes" + ChatColor.DARK_GRAY + " »" + ChatColor.GRAY + " 使用方法/freeze [player]");
+                        player.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Eyes" + ChatColor.DARK_GRAY + " »" + ChatColor.GRAY + " 例如:/freeze Whfoxite");
                     return true;
                 }
                 final Player t = Bukkit.getServer().getPlayer(args[0]);
@@ -62,7 +63,7 @@ public class Freeze extends JavaPlugin implements Listener
                 }
             }
             if (!sender.hasPermission("freeze.use")) {
-                player.sendMessage("Unknown command. Type /help for help.");
+                player.sendMessage("Unknown command. Type" + "/help" + "for help.");
                 return true;
             }
         }
@@ -71,6 +72,7 @@ public class Freeze extends JavaPlugin implements Listener
             if (sender.hasPermission("freeze.use")) {
                 if (args.length == 0) {
                     player.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Eyes" + ChatColor.DARK_GRAY + " »" + ChatColor.GRAY + " 使用方法/unfreeze [player]");
+                    player.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Eyes" + ChatColor.DARK_GRAY + " »" + ChatColor.GRAY + " 例如:/freeze Whfoxite");
                     return true;
                 }
                 final Player t = Bukkit.getServer().getPlayer(args[0]);
@@ -85,12 +87,12 @@ public class Freeze extends JavaPlugin implements Listener
                     return true;
                 }
                 if (!this.frozen.contains(t)) {
-                    player.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Eyes" + ChatColor.DARK_GRAY + " »" + ChatColor.GRAY + " 这名玩家没有被冻结");
+                    player.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Eyes" + ChatColor.DARK_GRAY + " »" + ChatColor.GRAY + " 这名玩家没有被冻结!");
                     return true;
                 }
             }
             if (!sender.hasPermission("freeze.use")) {
-                player.sendMessage("Unknown command. Type /help for help.");
+                player.sendMessage("Unknown command. Type" + "/help" + "for help.");
                 return true;
             }
         }
