@@ -168,7 +168,7 @@ public class Freeze extends JavaPlugin implements Listener
     public void onLogOut(final PlayerQuitEvent event) {
         final Player p = event.getPlayer();
         if (this.frozen.contains(p)) {
-            dispatchCommand(getConsoleSender(), "ban " + p.getPlayer().getName() + " 5d &F&LCy&B&LEyes &8&l- &f拒绝查端");
+            dispatchCommand(getConsoleSender(), "ban " + p.getPlayer().getName() + " 1y &F&LCy&B&LEyes &8&l- &f拒绝查端");
         }
     }
 }
