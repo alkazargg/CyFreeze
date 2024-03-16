@@ -77,7 +77,7 @@ public class Freeze extends JavaPlugin implements Listener
                 }
                 final Player t = Bukkit.getServer().getPlayer(args[0]);
                 if (t == null) {
-                    player.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Eyes" + ChatColor.DARK_GRAY + " »" + ChatColor.GRAY + " 这名玩家不在线!");
+                    player.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Eyes" + ChatColor.DARK_GRAY + " »" + ChatColor.GRAY + " 这名玩家不在线");
                     return true;
                 }
                 if (this.frozen.contains(t)) {
@@ -87,7 +87,7 @@ public class Freeze extends JavaPlugin implements Listener
                     return true;
                 }
                 if (!this.frozen.contains(t)) {
-                    player.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Eyes" + ChatColor.DARK_GRAY + " »" + ChatColor.GRAY + " 这名玩家没有被冻结!");
+                    player.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Eyes" + ChatColor.DARK_GRAY + " »" + ChatColor.GRAY + " 这名玩家没有被冻结");
                     return true;
                 }
             }
