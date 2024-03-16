@@ -1,6 +1,5 @@
 package cy.freeze;
 
-import javafx.scene.shape.MoveTo;
 import org.bukkit.plugin.java.*;
 import java.util.*;
 import org.bukkit.entity.*;
