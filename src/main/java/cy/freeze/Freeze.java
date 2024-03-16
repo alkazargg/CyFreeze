@@ -81,7 +81,7 @@ public class Freeze extends JavaPlugin implements Listener
                 }
                 if (this.frozen.contains(t)) {
                     this.frozen.remove(t);
-                    player.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Eyes" + ChatColor.DARK_GRAY + " »" + ChatColor.GRAY + " 这名玩家被你解除冻结");
+                    player.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Eyes" + ChatColor.DARK_GRAY + " »" + ChatColor.GRAY + " 这名玩家被你解除冻结.");
                     t.sendMessage(ChatColor.GREEN +  sender.getName() + "为你解除冻结.");
                     return true;
                 }
