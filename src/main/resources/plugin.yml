@@ -5,9 +5,13 @@ author: Cyttt
 
 commands:
   freeze:
-    description: Freezes a player.
+    aliases:
+      - cyfreeze
+      - cyf
   unfreeze:
-    description: Unfreezes a player.
+    aliases:
+      - cyfreeze
+      - cyf
 
 permissions:
   freeze.use:
