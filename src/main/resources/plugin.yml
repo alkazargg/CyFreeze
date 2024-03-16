@@ -1,0 +1,14 @@
+name: Freeze
+version: 1.2
+main: cy.freeze
+author: Cyttt
+
+commands:
+  freeze:
+    description: Freezes a player.
+  unfreeze:
+    description: Unfreezes a player.
+
+permissions:
+  freeze.use:
+    description: Node for /freeze or /unfreeze
